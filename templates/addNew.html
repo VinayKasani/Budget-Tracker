@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+{% block contents %}
+    <div class="addTransaction" >
+        <form action="/addNewData" method="post">
+            <label for="transaction">Name of the Transaction</label>
+            <input type="text" name="transaction" id="transaction">
+            <label for="transactionAmount">Amount of Transaction</label>
+            <input type="number" name="transactionAmount" id="transactionAmount">
+            <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+{% endblock %}
